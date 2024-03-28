@@ -21,3 +21,8 @@ do
 done
 
 #copying files of working directory to new folder
+:'
+for file in *.sh
+do mv $file bashScripts/
+done
+'
