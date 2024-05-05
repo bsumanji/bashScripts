@@ -1,14 +1,20 @@
 [user@host ~]$ var=$(hostname -s); echo $var
 host
+
 [user@host ~]$ echo "***** hostname is ${var} *****"
 ***** hostname is host *****
+
 [user@host ~]$ echo Your username variable is \$USER.
 Your username variable is $USER.
+
 [user@host ~]$ echo "Will variable $var evaluate to $(hostname -s)?"
 Will variable host evaluate to host?
+
 [user@host ~]$ echo 'Will variable $var evaluate to $(hostname -s)?'
 Will variable $var evaluate to $(hostname -s)?
+
 [user@host ~]$ echo "\"Hello, world\""
 "Hello, world"
+
 [user@host ~]$ echo '"Hello, world"'
 "Hello, world"

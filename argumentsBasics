@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "total number of arguments are $# "
+echo "Each arguments value are $* "

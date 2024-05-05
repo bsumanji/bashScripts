@@ -1,0 +1,32 @@
+#!/bin/bash
+
+
+#USAGE : ./solution7 <file or directory name>
+
+# Check if an argument is provided
+if [ $# -eq 0 ]; then
+    echo "Usage: $0 <file_or_directory>"
+    exit 1
+fi
+
+
+#Accept argument 
+path=$1
+
+#path="$1"
+
+#identify the file type
+
+if [ -d $path ]
+then
+	echo "This is a directory"
+elif [ -f $path ]
+then
+	echo "This is a regular file"
+else
+	echo "This is other than regular file"
+fi
+
+echo "Listing the file"
+
+ls -l $path
