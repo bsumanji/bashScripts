@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Prompt user for prefix input
+read -p "Enter prefix to prepend to file names (Press Enter for current date): " user_prefix
+
+# Default prefix to current date if user input is empty
+if [ -z "$user_prefix" ]; then
+    prefix=$(date +'%Y-%m-%d')
+else
+    prefix="$user_prefix"
+fi
+
+path=/root/bashScripts/demoFolder/*
+
+# Loop through all files in the current directory
+for file in $path; do
+    # Check if the item is a file (not a directory)
+    if [ -f "$file" ]; then
+        # Get the file name without the extension
+        filename=$(basename "$file")
+        
+        # Extract file extension
+        extension="${filename##*.}"
+        
+        # Check if the file has an extension
+        if [ "$extension" != "$filename" ]; then
+            # Get the file name without extension
+            filename="${filename%.*}"
+            # Include the dot only if the extension exists
+            new_filename="$prefix"_"$filename.$extension"
+        else
+            # Set new filename without extension
+            new_filename="$prefix"_"$filename"
+        fi
+
+        echo "Original file name: $file"
+        echo "New file name: $new_filename"
+
+        # Rename the file
+        mv "$file" "$new_filename"
+    fi
+done
+
