@@ -14,6 +14,21 @@ path="/root/bashScripts/demoFolder/"
 #use *.* for current directory
 
 
+#exit if directory not exist
+if [ ! -d $path ]
+then
+	echo "Path not found. Exiting..."
+	exit 1
+fi
+
+#exit if file not exist
+if [ ! -e $path* ]
+then
+	echo "File(s) not found. Exiting..."
+	exit 1
+fi
+
+
 # Loop through all files in the current directory
 for file in $path*
 # here * iterates over all files in the directory specified by $path.
