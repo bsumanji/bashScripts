@@ -10,12 +10,14 @@ else
     prefix="$user_prefix"
 fi
 
-path=/root/bashScripts/demoFolder/*
+path="/root/bashScripts/demoFolder/"
 #use *.* for current directory
 
 
 # Loop through all files in the current directory
-for file in $path
+for file in $path*
+# here * iterates over all files in the directory specified by $path.
+
 do
     # Check if the item is a file (not a directory)
     if [ -f "$file" ];
@@ -47,7 +49,7 @@ do
         echo "New file name: $new_filename"
 
         # Rename the file
-        mv "$file" "$path/$new_filename"
+        mv "$file" "$path$new_filename"
     fi
 done
 

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Usage ./check-args-passed arg1 arg2 arg3 arg4 arg5
+
+if [ $# -gt 5 ]
+then
+	echo "Too many arguments. Arguments passed more than 5. Stoping.. "
+else
+	echo "The arguments passed are $* "
+fi

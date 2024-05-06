@@ -1,13 +1,16 @@
 #!/bin/bash
 
-# A script that receives two parameters (two filenames) and outputs whether those files exist.
+num1=10
+num2=12
 
-for files in "$1" "$2"
-do
-	if [ -f "$files" ]
-	then
-		echo "$files" exits!
-	else
-		echo "$files" do not exist!
-	fi
-done
+#add=((num1))+((num2))
+
+#add=(num1+num2)
+
+
+#add=((num1+num2))
+
+
+
+add=$((num1+num2))
+echo total is $add

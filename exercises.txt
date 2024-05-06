@@ -1,18 +1,59 @@
 Basics
 
-1. Write a script that uses a for loop to count from 3 to 7.
-2. Write a script that uses a for loop to count from 1 to 17000.
-3. Write a script that uses a while loop to count from 3 to 7.
-4. Write a script that uses an until loop to count down from 8 to 4.
-5. Write a script that counts the number of files ending in .txt in the current directory.
-6. Wrap an if statement around the script so it is also correct when there are zero files ending in .txt.
-7. Write a script to display "hello world" using a function.  Refer script 15_functionsBasic.sh for solution. Refer below Exercise_13 and Exercise_14 for more.
-8. Chek if the number entered by user is greater than 10.
-9. Writea script to check if file exists. If not then create it.
-10. Write a script that takes two command line arguments. Check whether the name passed as first argument is of a directory or not. If not, then create a new directory with the name passed as second
+
+---->> Refer to the keynote first in this directory.
+
+
+1. Write a script to add two numbers and print. (solution: 3_adding_variables.sh)
+
+2. Write a script to read two numbers from user and print the sum. (solution: input-and-add.sh )
+
+3. Write a script to read numbers in command line argument and add them. (solution: add-arguments.sh)
+
+4. Write a script to read input silently and display what entered. (solution: read-input-silent-timeout.sh)
+
+5. Write a script to read, print and loop unlimited number of command line arguments (Solution: argumentsBasic & argumentsBasic2 )
+
+6. Modify above script to run using funtion call. (Solution: argumentsBasic_Functions & argumentsBasic_Functions2)
+
+7. Write a shell script to count the number of files having read permission in the current working directory (solution: count-files.sh)
+
+8. Write a script to identify current user. Check if it is root user or not. (solution: identify-user.sh & identify-user2.sh )
+
+9. Write a script to identify if the current user is owner of given file or not. (solution: identify-fileowner.sh) 
+
+10. Write a shell script which checks the total number of arguments passed. If the argument count is greater than 5 display the message "Too many arguments" (Solution: check-args-passed)
+
+11. Write a shell script to read a month name from the user. Check if the month entered is current month or Not. (solution: monthcheck & monthcheck2)
+
+12. Write a script to extract filename and extension separately. (Solution: 18_param_expan.sh) 
+
+13. Write a script that uses a for loop to count from 3 to 7.
+
+14. Write a script that uses a for loop to count from 1 to 17000.
+
+15. Write a script that uses a while loop to count from 3 to 7.
+
+16. Write a script that uses an until loop to count down from 8 to 4.
+
+17. Write a script that counts the number of files ending in .txt in the current directory.
+
+18. Wrap an if statement around the script so it is also correct when there are zero files ending in .txt.
+
+19. Write a script to display "hello world" using a function.  Refer script 15_functionsBasic.sh for solution. Refer below Exercise_13 and Exercise_14 for more.
+
+20. Chek if the number entered by user is greater than 10.
+
+21. Write a script to check if file exists. If not then create it.
+
+22. Write a script that takes two command line arguments. Check whether the name passed as first argument is of a directory or not. If not, then create a new directory with the name passed as second
 argument
 
-Exercises
+
+
+#############################   Exercises ###############################################################
+
+
 
 Exercise_1 - Write a srcipt to rename a file. The old name and new name must be passed at command line.
 

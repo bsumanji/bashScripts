@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Get the current month in lowercase
+current_month=$(date '+%B' | tr '[:upper:]' '[:lower:]')
+
+# Prompt the user to enter the name of the month
+echo "Enter the name of the month (case insensitive):"
+read user_input
+
+# Convert user input to lowercase for case-insensitive comparison
+user_input_lower=$(echo "$user_input" | tr '[:upper:]' '[:lower:]')
+
+# Check if the user input matches the current month
+if [ "$user_input_lower" = "$current_month" ]; then
+    echo "The month input is correct."
+else
+    echo "The correct month is: $current_month"
+fi
+

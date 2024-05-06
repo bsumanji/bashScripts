@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Enter the month in number you expect to be(jan=1,feb=2,dec=12) : "
+read month
+
+if [ $month -eq "$(date +%m)" ]
+then
+	echo Correct Month asumed.
+else
+	echo Wrong month asumed. Current month is "$(date +%m)"
+fi

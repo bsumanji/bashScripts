@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Define the display_arguments function with default values for parameters
+display_arguments() {
+    local i=1
+    for arg
+    do
+        echo "The argument number $i is $arg"
+        ((i++))
+    done
+}
+
+# Call the function passing arguments
+display_arguments "$@"
+

@@ -1,8 +1,0 @@
-#/bin/bash
-
-oldname=$1
-newname=$2
-
-mv $1 $2
-echo "The file named $1 has been renamed as $2 "
-

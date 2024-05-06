@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+# Usage ./10_arguments.sh arg1 arg2 arg3
+
+echo Name of the script file is $0
 echo The first argument is $1
 echo The second argument is $2
 echo The third argument is $3

@@ -1,0 +1,74 @@
+1.	Using $:
+
+	$ is used to access the value of a variable. For example, $variable retrieves the value stored in the variable named variable.
+	$ is also used for parameter expansion, command substitution, and arithmetic expansion.
+
+
+	Example:
+
+	variable="Hello"
+	echo $variable   # Accessing variable value
+
+
+
+
+2.	Using $(...):
+	
+	$(...) is used for command substitution. It allows you to run a command within a script and use its output as part of another command or expression.
+	For example, $(command) runs command and captures its output.
+
+
+	Example:
+	
+	current_directory=$(pwd)  # Command substitution
+
+
+
+3. 	$($...)
+	
+	The notation $(...) is specifically used for command substitution, where the output of the command inside the parentheses is captured and used in the script.
+
+	However, $($variable) doesn't follow the typical usage of command substitution. It's not a standard notation in Bash scripting.
+
+
+
+	For example,
+	if $variable contains a command like ls -l, and you want to execute this command and capture its output, you could use:
+
+	result=$( $variable )
+
+
+
+4.	Comparison Operators:
+	-eq: Used to test if two numbers are equal.
+	-ne: Used to test if two numbers are not equal.
+	-gt: Used to test if the left number is greater than the right number.
+	-lt: Used to test if the left number is less than the right number.
+	-ge: Used to test if the left number is greater than or equal to the right number.
+	-le: Used to test if the left number is less than or equal to the right number.
+	These operators are used in numeric comparisons, typically within conditional statements like if or while.
+
+
+	Example:
+
+	if [ $num1 -eq $num2 ]
+	then
+	    echo "Numbers are equal"
+	fi
+	
+
+
+5	Conditional Operator:
+	=: Used for string comparison. It checks if two strings are equal.
+	!=: Used for string comparison. It checks if two strings are not equal.
+	These operators are used within conditional statements for comparing strings.
+
+	
+	Example:
+	if [ "$string1" = "$string2" ]
+	then
+	    echo "Strings are equal"
+	fi
+
+
+

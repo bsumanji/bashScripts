@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Usage ./argumentsBasics arg1 arg2 arg3 arg4 arg5 arg6 
+
+
+echo "total number of arguments are $# "
+echo "Each arguments value are $* "
+
+echo "Again receiving and displaying arguments using loop....."
+
+count=1
+for arg in $*  ##### ----> alternate of $@
+do
+	echo "The argument number $count is $arg"
+	((count++))
+
+done
