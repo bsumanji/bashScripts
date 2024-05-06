@@ -1,0 +1,4 @@
+#!/bin/bash
+Hostname=$(hostname)
+echo "This script is running on host named $Hostname"
+echo "The time currently is $(date +%T)"

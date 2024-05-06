@@ -7,6 +7,10 @@ Basics
 5. Write a script that counts the number of files ending in .txt in the current directory.
 6. Wrap an if statement around the script so it is also correct when there are zero files ending in .txt.
 7. Write a script to display "hello world" using a function.  Refer script 15_functionsBasic.sh for solution. Refer below Exercise_13 and Exercise_14 for more.
+8. Chek if the number entered by user is greater than 10.
+9. Writea script to check if file exists. If not then create it.
+10. Write a script that takes two command line arguments. Check whether the name passed as first argument is of a directory or not. If not, then create a new directory with the name passed as second
+argument
 
 Exercises
 
